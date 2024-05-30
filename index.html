@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Service Center</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .gallery img {
+            width: 30%;
+            height: auto;
+            margin: 0 10px;
+        }
+        .packages {
+            margin: 20px 0;
+        }
+        .package {
+            margin: 10px 0;
+        }
+        form {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Car Service Center</h1>
+        <div class="gallery">
+            <img src="https://petalingjayahub.com/wp-content/uploads/2022/10/car-workshop.jpg" alt="Car Workshop 1">
+            <img src="https://spn-sta.spinny.com/blog/20220228141352/Body-Type-Header.jpg?compress=true&quality=80&w=576&dpr=2.6" alt="Car Workshop 2">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2023/10/354852007/NF/JG/ZL/40529501/car-accessories.jpg" alt="Car Accessories">
+        </div>
+        <h2>Service Packages</h2>
+        <div class="packages">
+            <div class="package">
+                <h3>Basic Service</h3>
+                <p>Includes oil change, tire rotation, and general inspection.</p>
+            </div>
+            <div class="package">
+                <h3>Premium Service</h3>
+                <p>Includes basic service plus brake check, battery check, and engine diagnostics.</p>
+            </div>
+            <div class="package">
+                <h3>Deluxe Service</h3>
+                <p>Includes premium service plus car wash, interior cleaning, and air filter replacement.</p>
+            </div>
+        </div>
+        <h2>Book a Service</h2>
+        <form id="serviceForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="servicePackage">Service Package:</label>
+            <select id="servicePackage" name="servicePackage" required>
+                <option value="basic">Basic Service</option>
+                <option value="premium">Premium Service</option>
+                <option value="deluxe">Deluxe Service</option>
+            </select>
+            <br>
+            <input type="submit" value="Book Now">
+        </form>
+    </div>
+</body>
+</html>
